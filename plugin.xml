@@ -29,7 +29,7 @@
     <issue>https://github.com/apache/cordova-plugin-network-information/issues</issue>
 
     <js-module src="www/network.js" name="network">
-        <clobbers target="cordova.plugins.network.connnection" />
+        <clobbers target="cordova.plugins.network.connection" />
     </js-module>
 
     <js-module src="www/Connection.js" name="Connection">
