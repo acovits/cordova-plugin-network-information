@@ -19,9 +19,7 @@
 -->
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-xmlns:android="http://schemas.android.com/apk/res/android"
-           id="cordova-plugin-network-information"
-      version="3.0.1-dev">
+    xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugin-network-information" version="3.0.1-dev">
 
     <name>Network Information</name>
     <description>Cordova Network Information Plugin</description>
@@ -31,11 +29,11 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     <issue>https://github.com/apache/cordova-plugin-network-information/issues</issue>
 
     <js-module src="www/network.js" name="network">
-        <clobbers target="navigator.connection" />
+        <clobbers target="cordova.plugins.network.connnection" />
     </js-module>
 
     <js-module src="www/Connection.js" name="Connection">
-        <clobbers target="Connection" />
+        <clobbers target="cordova.plugins.network.types" />
     </js-module>
 
 
@@ -66,9 +64,9 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         <header-file src="src/ios/CDVConnection.h" />
         <source-file src="src/ios/CDVConnection.m" />
         <header-file src="src/ios/CDVReachability.h" />
-	    <source-file src="src/ios/CDVReachability.m" />
-	    <framework src="SystemConfiguration.framework" weak="true" />
-	    <framework src="CoreTelephony.framework" />
+        <source-file src="src/ios/CDVReachability.m" />
+        <framework src="SystemConfiguration.framework" weak="true" />
+        <framework src="CoreTelephony.framework" />
     </platform>
 
     <!-- windows -->
