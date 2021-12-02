@@ -65,7 +65,7 @@
         <source-file src="src/ios/CDVConnection.m" />
         <header-file src="src/ios/CDVReachability.h" />
         <source-file src="src/ios/CDVReachability.m" />
-        <header-file src="src/ios/Bridging-Header.h" />
+        <header-file src="src/ios/Network-Information-Bridging-Header.h" />
         <framework src="SystemConfiguration.framework" weak="true" />
         <framework src="CoreTelephony.framework" />
     </platform>
